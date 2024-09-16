@@ -4,8 +4,10 @@ LABEL maintainer="Bar Abudi <barabudy@gmail.com>"
 WORKDIR /BIU-Python
 
 COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
 
 EXPOSE 5000
 
-CMD python app.py
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
