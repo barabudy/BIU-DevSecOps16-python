@@ -6,15 +6,15 @@
     <title>Bar Abudi</title>
 
     <!--Resources-->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/myScript.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/myScript.js') }}"></script>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/myStyle.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/myStyle.css" />
-    <link rel="icon" href="img/icon.png" />
 </head>
 <body>
     <div class="container">
@@ -48,19 +48,19 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/pic1.jpeg" alt="Picture 1 of Bar" class="rounded-circle">
+                        <img src="{{ url_for('static', filename='images/pic1.jpeg') }}" alt="Picture 2 of Bar" class="rounded-circle">
                     </div>
 
                     <div class="carousel-item">
-                        <img src="img/pic2.png" alt="Picture 2 of Bar" class="rounded-circle">
+                        <img src="{{ url_for('static', filename='images/pic2.png') }}" alt="Picture 2 of Bar" class="rounded-circle">
                     </div>
 
                     <div class="carousel-item">
-                        <img src="img/pic3.png" alt="Picture 3 of Bar" class="rounded-circle">
+                        <img src="{{ url_for('static', filename='images/pic3.png') }}" alt="Picture 2 of Bar" class="rounded-circle">
                     </div>
 
                     <div class="carousel-item">
-                        <img src="img/pic4.png" alt="Picture 4 of Bar" class="rounded-circle">
+                        <img src="{{ url_for('static', filename='images/pic4.png') }}" alt="Picture 2 of Bar" class="rounded-circle">
                     </div>
 
                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -81,7 +81,7 @@
                 <h2>About Me</h2>
                 <p>My name is Bar Abudi. My journey with technology started when I received my first PC at the age of 4. I currently work as a DevOps Engineer and I also share my passion by teaching application, website and game development using Python, JavaScript and Java.</p>
                 <p>I hold a Bachelor's degree of Instructional Design and a diploma of Computer Information Systems. To become a successful DevOps Engineer I have also taken professional courses at Bar Ilan University and DevOps Experts</p>
-                <p>I created this project to practice Python, creating Docker images, deploying Flask applications on cloud VMs (Oracle & AWS), git and CI/CD with GitHub Actions. The source files are available at this public <a href="https://github.com/barabudy/personal-website" target="_blank">GitHub</a> repository</p>
+                <p>I created this project to practice Python, creating Docker images, deploying Flask applications on cloud VMs (Oracle & AWS), git and CI/CD with GitHub Actions. The source files are available at this public <a href="https://github.com/barabudy/BIU-DevSecOps16-python" target="_blank">GitHub</a> repository</p>
                 <h3>Hobbies</h3>
                 <p>I enjoy learning, traveling and meeting new people. I like cooking, Squash, dancing and practicing yoga. I believe a healthy body is a happy body.</p>
             </div>
