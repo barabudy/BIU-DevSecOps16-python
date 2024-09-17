@@ -6,7 +6,6 @@ WORKDIR /BIU-DevSecOps-Python
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# COPY . .
 COPY app.py .
 COPY static/ static/
 COPY templates/ templates/
